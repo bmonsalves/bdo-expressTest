@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta charset="UTF-8">
+    <title>Lista de artistas</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>artists</h1>
+    <ul>
+    	<% artists.forEach(function(artist){ %>
+			<li><a href='artists/<%= artist._id %>'/><%= artist.name %></li>
+    	<% }); %>
+    </ul>
+  </body>
+</html>
